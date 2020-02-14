@@ -1,6 +1,3 @@
-require "Team_Roster/version"
+require_relative "./Team_Roster/version"
 
-module TeamRoster
-  class Error < StandardError; end
-  # Your code goes here...
-end
+require_relative './Team_Roster/cli'
