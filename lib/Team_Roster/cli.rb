@@ -8,26 +8,13 @@ class TeamRoster::CLI
   
   def list_players
     puts "Team Lineup:"
-    puts <<-DOC.gsub /^\s*/, ''
-    1. Harryhook
-    2. Unkoe
-    3. AKM
-    4. Gamsu
-    5. Note
-    6. Closer
-    7. Decay
-    8. Zachareee
-    9. Trill
-    10. Doha
-    11. Crimzo
-    DOC
+    @team = TeamRoster::Team.today
   end
   
   def menu
-    
     input = nil
   while input != "exit"
-  puts "Enter the number of the player you want info on:"
+  puts "Enter the number of the player you want info on, type list to see the roster, or type exit:"
     input = gets.strip
     case input
       when "1"
@@ -52,6 +39,10 @@ class TeamRoster::CLI
         puts "Info on Doha:"
       when "11"
         puts "Info on Crimzo:"
+      when "list"
+        list_players
+      else
+        puts "Invalid choice, type list or exit"
       end
     end
   end
