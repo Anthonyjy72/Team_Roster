@@ -1,8 +1,6 @@
 # TeamRoster
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/Team_Roster`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+A gem that keeps track of the current Dallas Fuel roster for the Overwatch leage.
 
 ## Installation
 
@@ -22,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Run the gem, type list to see the entire team roster. Press the number (1-11) for the player you want more info on. Press exit to quit.
 
 ## Development
 
