@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 
-require './lib/Team_Roster'
+require "bundler/setup"
+require "Team_Roster"
 
 TeamRoster::CLI.new.call

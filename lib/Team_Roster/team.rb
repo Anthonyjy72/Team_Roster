@@ -9,17 +9,13 @@ class TeamRoster::Team
   def self.scrape_players
     players = []
    
-    players << self.scrape_fueloverwatchleague
-    
-    
+    players << self.scrape_players
     
     players
   end
   
-  def self.scrape_fueloverwatchleague
+  def self.scrape_players
     doc = Nokogiri::HTML(open("https://fuel.overwatchleague.com/en-us/roster"))
     binding.pry
-   
   end
-  
 end
