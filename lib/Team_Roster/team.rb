@@ -2,19 +2,12 @@ class TeamRoster::Team
   attr_accessor :name, :number, :url
   
   def self.today
-   puts <<-DOC.gsub /^\s*/, ''
-    1. Harryhook
-    2. Unkoe
-    3. AKM
-    4. Gamsu
-    5. Note
-    6. Closer
-    7. Decay
-    8. Zachareee
-    9. Trill
-    10. Doha
-    11. Crimzo
-   DOC
+    
+    self.scrape_players
+  end
+  
+  def self.scrape_players
+    players = []
    
    player_1 = self.new
    player_1.name = "Harryhook"
